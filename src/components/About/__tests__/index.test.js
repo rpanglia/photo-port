@@ -4,7 +4,7 @@ import '@testing-library/jest-dom/extend-expect';
 import About from '..';
 
 
-afterEach(cleanup);
+afterEach(cleanup); //cleanup should be blue
 
 describe('About component', () => {
     //First Test
@@ -16,7 +16,7 @@ describe('About component', () => {
     //Second Test
     it('matches snapshot DOM node structure', () => {
         // render About
-        const { asFragment } = render(<About />);
+        const { asFragment } = render(<About />);  //asFragment should be blue
 
         expect(asFragment()).toMatchSnapshot();
     });
